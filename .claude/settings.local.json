@@ -1,0 +1,30 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem *)",
+      "Bash(New-Item *)",
+      "Bash(test-path *)",
+      "Bash(npm install *)",
+      "Bash(timeout 5 node src/api/server.js)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\UseR\\\\Documents\\\\agent team\\\\src\\\\api\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\UseR\\\\Documents\\\\agent team\\\\src\\\\components\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\UseR\\\\Documents\\\\agent team\\\\tests\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\UseR\\\\Documents\\\\agent team\\\\docs\")",
+      "Bash(npm create *)",
+      "Bash(npm ls *)",
+      "Bash(node src/api/server.js)",
+      "Bash(npm run *)",
+      "Bash(npx jest *)",
+      "Bash(curl -s http://localhost:3001/api/users)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl *)",
+      "Bash(./node_modules/.bin/jest tests/frontend.test.js --verbose)",
+      "Bash(./node_modules/.bin/jest --config jest.config.frontend.js --verbose)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); d['members']=[m for m in d['members'] if m['name']=='team-lead']; print\\(json.dumps\\(d, indent=2\\)\\)\")",
+      "Bash(mv \"C:\\\\Users\\\\UseR\\\\.claude\\\\teams\\\\fullstack-app\\\\config.json.tmp\" \"C:\\\\Users\\\\UseR\\\\.claude\\\\teams\\\\fullstack-app\\\\config.json\")"
+    ]
+  }
+}
